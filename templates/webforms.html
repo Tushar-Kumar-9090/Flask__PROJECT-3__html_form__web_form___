@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #da4453, #89216b);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        div{
+            width: fit-content;
+            padding: 50px;
+            border-radius: 20px;
+            background: linear-gradient(to right, #ffefba, #ffffff);
+        }
+        input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        
+        input[type="submit"]:hover{
+            background-color: tomato;
+        }
+    </style>    
+</head>
+<body>
+    <center>
+        <h1>webforms</h1>
+        <div>
+        <form method="POST">
+
+            {{NF.firstname.label}}   {{NF.firstname}} <br><br>
+            {{NF.lastname.label}}   {{NF.lastname}} <br><br>
+            {{NF.submit}}
+
+        </form>
+    </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #da4453, #89216b);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        div{
+            width: fit-content;
+            padding: 50px;
+            border-radius: 20px;
+            background: linear-gradient(to right, #ffefba, #ffffff);
+        }
+        input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        
+        input[type="submit"]:hover{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>HTML Form</h1>
+        <div>
+        <form method="POST">
+
+            <table cellspacing="0" cellpadding="15">
+                <tr>
+                    <th><label for="name">Fistname</label></th>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <th><label for="name">Lastname</label></th>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <th><label for="age">Age</label></th>
+                    <td><input type="number" name="age" id="age"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="htmlforms"></td>
+                </tr>
+            </table>
+            
+
+        </form>
+    </div>
+    </center>
+</body>
+</html>
